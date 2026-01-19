@@ -1,0 +1,23 @@
+def Calculator():
+    print("Easy Calculator Using Def")
+try:
+    num1 = float(input("Enter the first Number :"))
+    Operator = input("+,-,X,/) :")
+    num2 = float(input("Enter the second number :"))
+    if Operator == "+":
+        print("Result :",num1 + num2)
+    elif Operator == "-":
+        print("Result :",num1 - num2)
+    elif Operator == "X":
+        print("Result :", num1 * num2)
+    elif Operator == "/":
+        if num1 != 0:
+            print("Result :", num1 / num2)
+except ZeroDivisionError:
+    print("Please Enter the valid Value")
+except ValueError:
+    print("ENter the right value")
+finally:
+    print("Thanks for using our services")
+
+Calculator()
